@@ -24,7 +24,7 @@
     "axios": "~0.17.0",
     "boom": "~5.2.0",
     "dotenv": "~4.0.0",
-    "handlebars": "~4.0.11",
+    "handlebars": "~4.5.3",
     "hapi": "~16.6.2",
     "hoek": "~4.2.0",
     "html-to-text": "~3.3.0",

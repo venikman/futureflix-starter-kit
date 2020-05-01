@@ -34,7 +34,8 @@
     "lodash": "~4.17.4",
     "mongoose": "~4.10.8",
     "mongoose-simple-random": "~0.4.1",
-    "vision": "~4.1.1"
+    "vision": "~4.1.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "code": "~4.1.0",
@@ -68,6 +69,9 @@
   "scripts": {
     "cleanup": "node ./data/load-sample-data.js --destroy",
     "pumpitup": "node ./data/load-sample-data.js",
-    "test": "lab --assert code --leaks --coverage"
-  }
+    "test": "lab --assert code --leaks --coverage",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
